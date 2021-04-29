@@ -15,6 +15,7 @@ import HomePage from './HomePage/HomePage';
 import Dashboard from './Dashboard/Dashboard';
 import Footer from './Footer/Footer';
 import BudgetList from './components/budget-list.component';
+import ChartPage from './components/charts.component';
 import EditBudget from './components/edit-budget.component';
 import CreateBudget from './components/create-budget.component';
 import Loading from './components/Loading';
@@ -35,6 +36,7 @@ const App = () => {
                 <PrivateRoute path ="/budgetList" exact component={BudgetList} /> 
                 <PrivateRoute path ="/edit/:id" component={EditBudget} />
                 <PrivateRoute path ="/create" component={CreateBudget} />
+                <PrivateRoute path="/charts" component={ChartPage}/>
                 <Route path="/">
                     <HomePage/>
                 </Route>

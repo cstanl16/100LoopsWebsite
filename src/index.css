@@ -12,10 +12,10 @@ code {
     monospace;
 }
 
-/*-----------------------Nav Bar --------------------------------*/
+/*----------------------- Nav Bar --------------------------------*/
 .MenuContainer {
   width: 100%;
-  background-color: #4d5791;
+  background-color: #1DB954;
   height: 44px;
   padding: 0 40px;
 }
@@ -31,16 +31,19 @@ code {
   display: inline-block;
   padding: 0 20px;
   line-height: 44px;
-  font-size: 1.4em;
+  font-size: 1.6em;
   text-decoration: none;
   justify-content: space-around;
-  color: #fff;
+  color: #191414;
   margin: 0;
 }
 
 .Nav-Link:hover {
-  background-color: white;
-  color: #4d5791;
+  background-color:#191414;
+  color: #1DB954;
+  font-size: 1.6em;
+  border: #1f2833;
+  border-radius:10px;
 }
 
 .Nav-Button {
@@ -48,27 +51,34 @@ code {
   display: block;
   padding: 0 20px;
   line-height: 44px;
-  font-size: 1.4em;
+  font-size: 1.6em;
   text-decoration: none;
   float: right;
-  color: #8c9ee6;
+  color: #191414;
   margin: 0;
 }
-.loginButton {
-  border-radius: 6px;
-  border: 4px solid #b4c6f0;
-  background-color: white;
-}
+
+/*-------------------------------- Login/logout button ----------------------------------*/
+
+
 .loginButton:hover {
+  border-radius: 6px;
+  border: 4px solid #1DB954;
+  background-color: black;
+  color: white;
+  height: 100%;
+}
+.loginButton {
   transition-duration: 0.4s;
   border-radius: 6px;
-  border: 4px solid #b4c6f0;
-  background-color: #b4c6f0;
+  border: 4px solid   #1DB954;
+  background-color: #1DB954;
+  color: black ;
 }
 .logoutButton{
   border-radius: 6px;
   border: 2px solid white;
-  background-color: #4d5791;
+  background-color: #1DB954;
   color: white;
 }
 .logoutButton:hover {
@@ -79,6 +89,54 @@ code {
   background-color: white;
 }
 
+
+/*------------------MAIN CSS -----------------------*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+  font-family: Tahoma, Arial;
+  background: #191414;
+  color: white;
+}
+
+.container {
+  padding: 40px;
+  width: 100%;
+}
+
+.page-area {
+  max-width: 768px;
+  display: inline-block;
+}
+
+
+/* -----------------------Footer ----------------------*/
+.bottom {
+  height: 50px;
+  background-color: #1DB954;
+  padding: 40px;
+}
+
+.center {
+  text-align: center;
+}
+
+.container div.text-box {
+  display: inline-block;
+  width: 100%;
+  max-width: 340px;
+  text-align: justify;
+  margin: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .container .div.text-box {
+      margin: 10px;
+  }
+}
 
 
 
@@ -248,9 +306,122 @@ code {
   background-color: #b4c6f0;
 }
 
+/*-----------------------Profile and Discover Page --------------------------------*/
 
+.profilePage {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: space-around;
+	background-color: #1f2833;
+	align-items: center;
+}
 
+.profilePhoto {
+  margin:20px;
+  width: 25%;
+  border-color:#45a29e;
+  border-radius:20px;
+  border-width:20px;
+  display: inline-block;
+  text-align: left;
+  justify-content: left;
+}
 
+.profileAbout {
+	justify-content: center;
+	text-align: left;
+	width: 50%;
+	padding: 40px;
+	margin: 20px;
+	background-color: #45a29e;
+	border-radius: 20px;
+	border-color: black;
+	border-width: 5px;
+  font-size: 20px;
+}
+
+.profileSchool {
+  display: block;
+  text-align:left;
+  font-size: 24px;
+}
+.profileJob {
+  display: block;
+  text-align:left;
+  font-size: 24px;
+}
+.profileAttribute {
+  display: block;
+  text-align: left;
+}
+.border{
+  border-top:#1f2833;
+  border-width:1px;
+  border-color: #1f2833;
+}
+.profilePageName {
+  display: inline-block;
+  height: 100%;
+}
+.profilePageText {
+  display: block;
+}
+
+/*----------------------- Charts Page --------------------------------*/
+
+.chart-container {
+	display: inline-block;
+  width: 1000px;
+  height: 800px ;
+}
+
+.charts {
+  margin:20px;
+  width: 50%;
+  border-color:#45a29e;
+  border-radius:20px;
+  border-width:20px;
+  display: inline-block;
+  text-align: left;
+  justify-content: left;
+}
+
+/*-----------------------Hero --------------------------------*/
+
+div.hero {
+  height: 240px;
+  background-image: linear-gradient(black, #191414);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  padding-top: 20px;
+  align-items: center;
+  display: block;
+}
+.heroImage {
+  text-align: center;
+  display:block;
+	height: 140px;
+	width: 100%;
+  margin-top: 0;
+  margin-bottom: 0px;
+}
+
+div.hero h1,
+div.hero h2 {
+  text-align: center;
+  margin: 0;
+}
+
+div.hero h1 {
+  color: #1DB954;
+  font-size: 4.2em;
+  margin-bottom: 20px;
+}
+
+div.hero h2 {
+  color: #FAF9F6;
+}
 
 /*----------------------RESET CSS-------------------------*/
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -603,76 +774,8 @@ template {
   display: none;
 }
 
-/*------------------MAIN CSS -----------------------*/
-* {
-  box-sizing: border-box;
-}
-
-body {
-  /*--------- THIS IS A A11Y CHANGE ------------>*/
-  font-size: 14px;
-  /*--------- FONT SIZE WAS INCREASED FOR ACCESSIBILITY ------------>*/
-  font-family: Tahoma, Arial;
-}
 
 
+/*---------------Profile Color Scheme CSSS -----------------------*/
 
-div.hero {
-  height: 350px;
-  background-color: #b4c6f0;
-  background-image: url('bg.png');
-  background-size: 400px;
-  background-repeat: no-repeat;
-  background-position: center bottom;
-  padding-top: 40px;
-}
-
-div.hero h1,
-div.hero h2 {
-  text-align: center;
-  margin: 0;
-}
-
-div.hero h1 {
-  color: #fff;
-  font-size: 4.2em;
-  margin-bottom: 20px;
-}
-
-div.hero h2 {
-  color: #4d5791;
-}
-
-.container {
-  padding: 40px;
-  width: 100%;
-}
-
-.page-area {
-  max-width: 768px;
-  display: inline-block;
-}
-
-.bottom {
-  height: 50px;
-  background-color: #b4c6f0;
-  padding: 40px;
-}
-
-.center {
-  text-align: center;
-}
-
-.container div.text-box {
-  display: inline-block;
-  width: 100%;
-  max-width: 340px;
-  text-align: justify;
-  margin: 20px;
-}
-
-@media screen and (min-width: 768px) {
-  .container .div.text-box {
-      margin: 10px;
-  }
-}
+/* COLORS: Green:#1DB954 - Black:#1f2833 - #557a95 - #b1a296 - #cbcaca */

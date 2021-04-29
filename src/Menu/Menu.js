@@ -19,12 +19,22 @@ const MainNav = () => (
 
         <Nav.Link
         as={RouterNavLink}
-        to="/dashboard"
+        to="/charts"
         exact
         className="Nav-Link"
         activeClassName="Nav-Link-active"
         >
-        Dashboard
+        Analysis
+        </Nav.Link>
+
+        <Nav.Link
+        as={RouterNavLink}
+        to="/charts"
+        exact
+        className="Nav-Link"
+        activeClassName="Nav-Link-active"
+        >
+        Advanced Analytics
         </Nav.Link>
 
         <AuthNav className=""/>

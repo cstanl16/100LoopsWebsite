@@ -8,18 +8,21 @@ function HomePage() {
             <div className="page-area">
 
                 <div className="text-box">
-                    <h1>Find the best Artist</h1>
+                    <h1 fontSize="300">Welcome!</h1>
                     <p>
-                        Do you know where you are spending your money? If you really stop to track it down,
-                        you would get surprised! Proper budget management depends on real data... and this
-                        app will help you with that!
+                    Deep Music Dive is a web-based product that provides insight towards upcoming trends 
+and artists using graphs, charts, and other power visualizations of data. Here you can 
+view trends in the music industry and use that information to pick out the next big artist.
                     </p>
                 </div>
 
                 <div className="text-box">
-                    <h1>Find the best Trends</h1>
+                    <h1>How to Use</h1>
                     <p>
-                        What if your clothing budget ended? You will get an alert. The goal is to never go over the budget.
+                    Click on the Tabs above to get started. Visual Analysis will show you charts and graphs
+comparing the popularity of an artist to attributes of their songs, such as danceability,
+loudness, etc. Attribute Analysis will show you AI generated attributes that are associated
+with the most popular artists.
                     </p>
                 </div>
 

@@ -8,8 +8,6 @@ import LoudnessVsPopularityData from '../Chart Files/LoudnessVsPopularity.csv';
 import TempoVsPopularityData from '../Chart Files/TempoVsPopularity.csv';
 import AcousticnessVsPopularityData from '../Chart Files/AcousticnessVsPopularity.csv';
 import * as d3 from "d3";
-import { minIndex } from 'd3';
-import chartTrendline from "chartjs-plugin-trendline";
 
 export default class ChartPage extends Component {
     
@@ -23,7 +21,7 @@ export default class ChartPage extends Component {
 			var artist = ArtistVsDanceabilityChart.map(function(d) {return d.artists});
 			var danceability = ArtistVsDanceabilityChart.map(function(d) {return d.danceability});
 
-			var ArtistVsDanceabilityChart = new Chart('ArtistVsDanceabilityChart', {
+			ArtistVsDanceabilityChart = new Chart('ArtistVsDanceabilityChart', {
 				type: 'bar',
 				data: {
 					labels: artist,
@@ -57,16 +55,12 @@ export default class ChartPage extends Component {
 					}],
 				},
 				options: {
-					responsive: true,
-					maintainAspectRatio: false,
 					scales: {
 					  	xAxes: [{
 							display: true,
 							scaleLabel: {
 								display: true,
-								labelString: 'Artist',
-								minIndex: 0,
-								maxIndex: 1,
+								labelString: 'Artist'
 							}
 					    }],
 					  	yAxes: [{
@@ -81,7 +75,7 @@ export default class ChartPage extends Component {
 			});
 		}
 
-	//------------------------------------ Dance Vs Popularity -----------------------------------------
+//------------------------------------ Dance Vs Popularity -----------------------------------------
 		d3.csv(DanceabilityVsPopularityData)
 			.then(makeChart1);
 	
@@ -90,7 +84,7 @@ export default class ChartPage extends Component {
 			var popularity = DanceabilityVsPopularityChart.map(function(d) {return d.popularity});
 			var danceability = DanceabilityVsPopularityChart.map(function(d) {return d.danceability});
 
-			var DanceabilityVsPopularityChart = new Chart('DanceabilityVsPopularityChart', {
+			DanceabilityVsPopularityChart = new Chart('DanceabilityVsPopularityChart', {
 				type: 'line',
 				data: {
 					labels: danceability,
@@ -129,15 +123,12 @@ export default class ChartPage extends Component {
 					}],
 				},
 				options: {
-					responsive: true,
 					scales: {
 					  	xAxes: [{
 							display: true,
 							scaleLabel: {
 								display: true,
-								labelString: 'Danceability',
-								minIndex: 0,
-								maxIndex: 1,
+								labelString: 'Danceability'
 							}
 					    }],
 					  	yAxes: [{
@@ -152,7 +143,7 @@ export default class ChartPage extends Component {
 			});
 		}
 
-	//------------------------------------ Genre Vs Popularity -----------------------------------------
+//------------------------------------ Genre Vs Popularity -----------------------------------------
 
 		//FIX THIS CHART TO USE AVERAGES OF DATA
 		d3.csv(GenreVsPopularityData)
@@ -163,7 +154,7 @@ export default class ChartPage extends Component {
 				var popularity = GenreVsPopularityChart.map(function(d) {return d.popularity});
 				var genre = GenreVsPopularityChart.map(function(d) {return d.genre});
 	
-				var GenreVsPopularityChart = new Chart('GenreVsPopularityChart', {
+				GenreVsPopularityChart = new Chart('GenreVsPopularityChart', {
 				type: 'line',
 				data: {
 					labels: genre,
@@ -202,15 +193,12 @@ export default class ChartPage extends Component {
 					}],
 				},
 				options: {
-					responsive: true,
 					scales: {
 					  	xAxes: [{
 							display: true,
 							scaleLabel: {
 								display: true,
-								labelString: 'Genre',
-								minIndex: 0,
-								maxIndex: 1,
+								labelString: 'Genre'
 							}
 					    }],
 					  	yAxes: [{
@@ -225,7 +213,7 @@ export default class ChartPage extends Component {
 			});
 		}
 
-	//------------------------------------ Key Vs Popularity -----------------------------------------
+//------------------------------------ Key Vs Popularity -----------------------------------------
 
 		d3.csv(KeyVsPopularityData)
 			.then(makeChart3);
@@ -235,7 +223,7 @@ export default class ChartPage extends Component {
 				var popularity = KeyVsPopularityChart.map(function(d) {return d.popularity});
 				var key = KeyVsPopularityChart.map(function(d) {return d.key});
 	
-				var KeyVsPopularityChart = new Chart('KeyVsPopularityChart', {
+				KeyVsPopularityChart = new Chart('KeyVsPopularityChart', {
 				type: 'line',
 				data: {
 					labels: key,
@@ -274,15 +262,12 @@ export default class ChartPage extends Component {
 					}],
 				},
 				options: {
-					responsive: true,
 					scales: {
 					  	xAxes: [{
 							display: true,
 							scaleLabel: {
 								display: true,
-								labelString: 'Key',
-								minIndex: 0,
-								maxIndex: 1,
+								labelString: 'Key'
 							}
 					    }],
 					  	yAxes: [{
@@ -297,17 +282,17 @@ export default class ChartPage extends Component {
 			});
 		}
 	
-	//------------------------------------ Acousticness Vs Popularity -----------------------------------------
+//------------------------------------ Acousticness Vs Popularity -----------------------------------------
 
 		d3.csv(AcousticnessVsPopularityData)
 			.then(makeChart4);
 	
-			function makeChart4(AcousticnessVsPopularityChart) {
-	
-				var popularity = AcousticnessVsPopularityChart.map(function(d) {return d.popularity});
-				var acousticness = AcousticnessVsPopularityChart.map(function(d) {return d.acousticness});
-	
-				var AcousticnessVsPopularityChart = new Chart('AcousticnessVsPopularityChart', {
+		function makeChart4(AcousticnessVsPopularityChart) {
+
+			var popularity = AcousticnessVsPopularityChart.map(function(d) {return d.popularity});
+			var acousticness = AcousticnessVsPopularityChart.map(function(d) {return d.acousticness});
+
+			AcousticnessVsPopularityChart = new Chart('AcousticnessVsPopularityChart', {
 				type: 'line',
 				data: {
 					labels: acousticness,
@@ -346,29 +331,27 @@ export default class ChartPage extends Component {
 					}],
 				},
 				options: {
-					responsive: true,
 					scales: {
-					  	xAxes: [{
+						xAxes: [{
 							display: true,
 							scaleLabel: {
 								display: true,
-								labelString: 'Acousticness',
-								minIndex: 0,
-								maxIndex: 1,
+								labelString: 'Acousticness'
 							}
-					    }],
-					  	yAxes: [{
+						}],
+						yAxes: [{
 							display: true,
 							scaleLabel: {
 								display: true,
 								labelString: 'Popularity'
 							}
-					  	}]
+						}]
 					}
 				}
 			});
 		}
-	//------------------------------------ Loudness Vs Popularity -----------------------------------------         
+
+//------------------------------------ Loudness Vs Popularity -----------------------------------------         
 			
 		d3.csv(LoudnessVsPopularityData)
 			.then(makeChart5);
@@ -378,7 +361,7 @@ export default class ChartPage extends Component {
 				var popularity = LoudnessVsPopularityChart.map(function(d) {return d.popularity});
 				var loudness = LoudnessVsPopularityChart.map(function(d) {return d.loudness});
 	
-				var LoudnessVsPopularityChart = new Chart('LoudnessVsPopularityChart', {
+				LoudnessVsPopularityChart = new Chart('LoudnessVsPopularityChart', {
 				type: 'line',
 				data: {
 					labels: loudness,
@@ -417,15 +400,12 @@ export default class ChartPage extends Component {
 					}],
 				},
 				options: {
-					responsive: true,
 					scales: {
 					  	xAxes: [{
 							display: true,
 							scaleLabel: {
 								display: true,
-								labelString: 'Loudness',
-								minIndex: 0,
-								maxIndex: 1,
+								labelString: 'Loudness'
 							}
 					    }],
 					  	yAxes: [{
@@ -450,7 +430,7 @@ export default class ChartPage extends Component {
 			var popularity = TempoVsPopularityChart.map(function(d) {return d.popularity});
 			var tempo = TempoVsPopularityChart.map(function(d) {return d.tempo});
 
-			var TempoVsPopularityChart = new Chart('TempoVsPopularityChart', {
+			TempoVsPopularityChart = new Chart('TempoVsPopularityChart', {
 				type: 'line',
 				data: {
 				labels: tempo,
@@ -489,16 +469,12 @@ export default class ChartPage extends Component {
 				}],
 			},
 			options: {
-				responsive: true,
-    			maintainAspectRatio: false,
 				scales: {
 					  xAxes: [{
 						display: true,
 						scaleLabel: {
 							display: true,
-							labelString: 'Tempo',
-							minIndex: 0,
-							maxIndex: 1,
+							labelString: 'Tempo'
 						}
 					}],
 					  yAxes: [{
@@ -520,41 +496,35 @@ export default class ChartPage extends Component {
     
     render() {
         return (
-            <div >
-				<div className="chart-container">
+            <div className="chartContainer">
+				<canvas className="charts"
+					id="ArtistVsDanceabilityChart"
+				/>
 
-					<canvas className="charts"
-						id="ArtistVsDanceabilityChart"
-					/>
+				<canvas
+				id="DanceabilityVsPopularityChart"
+				/>
 
-				</div>
+				<canvas
+					id="GenreVsPopularityChart"
+				/>
+
+				<canvas
+					id="KeyVsPopularityChart"
+				/>
+
+				<canvas
+					id="AcousticnessVsPopularityChart"
+				/>
+
+				<canvas
+					id="LoudnessVsPopularityChart"
+				/>
+
+				<canvas className="charts"
+					id="TempoVsPopularityChart"
+				/>
             </div>
         )
     }
 }
-
-/*
-<canvas className="charts"
-                    id="DanceabilityVsPopularityChart"
-                />
-
-              	<canvas className="charts"
-                    id="GenreVsPopularityChart"
-                />
-
-				<canvas className="charts"
-                    id="KeyVsPopularityChart"
-                />
-
-				<canvas className="charts"
-                    id="AcousticnessVsPopularityChart"
-                />
-
-				<canvas className="charts"
-                    id="LoudnessVsPopularityChart"
-                />
-
-				<canvas className="charts"
-                    id="TempoVsPopularityChart"
-                />
-*/

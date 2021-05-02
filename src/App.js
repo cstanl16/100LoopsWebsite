@@ -1,7 +1,5 @@
 import React from 'react';
 import './App.css';
-import { useAuth0 } from '@auth0/auth0-react';
-import PrivateRoute from './components/private-route';
 
 import { 
     BrowserRouter as Router,
@@ -13,14 +11,13 @@ import Menu from './Menu/Menu';
 import Hero from './Hero/Hero';
 import HomePage from './HomePage/HomePage';
 import Footer from './Footer/Footer';
-import ChartPage from './components/charts.component';
-import Loading from './components/Loading';
+import DanceabilityVsPopularity from './components/DanceabilityVsPopularity.component';
+import TempoVsPopularity from './components/TempoVsPopularity.component';
+import LoudnessVsPopularity from './components/LoudnessVsPopularity.component';
+import KeyVsPopularity from './components/KeyVsPopularity.component';
+import AcousticnessVsPopularity from './components/AcousticnessVsPopularity.component';
 
 const App = () => {
-    const { isLoading } = useAuth0();
-    if (isLoading) {
-        return <Loading/>
-    }
 
     return (
         <Router>
@@ -28,7 +25,11 @@ const App = () => {
             <Hero/>
             <div className = "mainContainer">
                 <Switch>
-                <PrivateRoute path="/charts" component={ChartPage}/>
+                <Route path="/dance" component={DanceabilityVsPopularity}/>
+                <Route path="/tempo" component={TempoVsPopularity}/>
+                <Route path="/loudness" component={LoudnessVsPopularity}/>
+                <Route path="/key" component={KeyVsPopularity}/>
+                <Route path="/acousticness" component={AcousticnessVsPopularity}/>
                 <Route path="/">
                     <HomePage/>
                 </Route>

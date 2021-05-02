@@ -25,13 +25,22 @@ loudness, etc. Attribute Analysis will show you AI generated attributes that are
 with the most popular artists.
                     </p>
                 </div>
+                <div className="text-box">
+                    <h1 fontSize="300">Welcome!</h1>
+                    <p>
+                    Deep Music Dive is a web-based product that provides insight towards upcoming trends 
+and artists using graphs, charts, and other power visualizations of data. Here you can 
+view trends in the music industry and use that information to pick out the next big artist.
+                    </p>
+                </div>
 
                 <div className="text-box">
-                    <h1>Find your Sound</h1>
+                    <h1>How to Use</h1>
                     <p>
-                        People who stick to a financial plan, budgeting every expense, get out of debt faster!
-                        Also, they to live happier lives... since they expend without guilt or fear... 
-                        because they know it is all good and accounted for.
+                    Click on the Tabs above to get started. Visual Analysis will show you charts and graphs
+comparing the popularity of an artist to attributes of their songs, such as danceability,
+loudness, etc. Attribute Analysis will show you AI generated attributes that are associated
+with the most popular artists.
                     </p>
                 </div>
             </div>

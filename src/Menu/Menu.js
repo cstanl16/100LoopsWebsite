@@ -1,9 +1,6 @@
 import React from "react";
 import { NavLink as RouterNavLink } from "react-router-dom";
 import { Nav } from "react-bootstrap";
-import LoginButton from '../components/login-button';
-import LogoutButton from '../components/logout-button';
-import { useAuth0 } from '@auth0/auth0-react';
 
 const MainNav = () => (
     <Nav className="Nav">
@@ -17,15 +14,62 @@ const MainNav = () => (
         Home
         </Nav.Link>
         
-        <Nav.Link
-        as={RouterNavLink}
-        to="/charts"
-        exact
-        className="Nav-Link"
-        activeClassName="Nav-Link-active"
-        >
-        Analysis
-        </Nav.Link>
+        <div class="dropdown">
+            <button class="dropbtn">Visual Analysis</button>
+
+            <div class="dropdown-content">
+                <Nav.Link
+                as={RouterNavLink}
+                to="/dance"
+                exact
+                className="Nav-Link"
+                activeClassName="Nav-Link-active"
+                >
+                DanceVsPop
+                </Nav.Link>
+
+                <Nav.Link
+                as={RouterNavLink}
+                to="/tempo"
+                exact
+                className="Nav-Link"
+                activeClassName="Nav-Link-active"
+                >
+                TempoVsPop
+                </Nav.Link>
+
+                <Nav.Link
+                as={RouterNavLink}
+                to="/loudness"
+                exact
+                className="Nav-Link"
+                activeClassName="Nav-Link-active"
+                >
+                LoudnessVsPop
+                </Nav.Link>
+
+                <Nav.Link
+                as={RouterNavLink}
+                to="/acousticness"
+                exact
+                className="Nav-Link"
+                activeClassName="Nav-Link-active"
+                >
+                AcousticnessVsPop
+                </Nav.Link>
+                
+                <Nav.Link
+                as={RouterNavLink}
+                to="/key"
+                exact
+                className="Nav-Link"
+                activeClassName="Nav-Link-active"
+                >
+                KeyVsPop
+                </Nav.Link>
+            </div>
+        </div>
+        
 
         <Nav.Link
         as={RouterNavLink}
@@ -37,19 +81,9 @@ const MainNav = () => (
         Advanced Analytics
         </Nav.Link>
 
-        <AuthNav className=""/>
   </Nav>
 );
 
-const AuthNav = () => {
-	const { isAuthenticated } = useAuth0();
-
-	return (
-		<Nav className="Nav-Button">
-			{isAuthenticated ? <LogoutButton /> : <LoginButton /> }
-		</Nav>
-	);
-};
 
 const Menu = () => {
     return (

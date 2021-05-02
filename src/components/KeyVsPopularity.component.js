@@ -57,13 +57,27 @@ export default class KeyVsPopularity extends Component {
 
     render() {
         return (
-            <div className="chartContainer">
+			<main className="center" id="main">
+				
+				<div className="page-area">
+					<div className="chartDescription">
+						<h1>Chart Description: </h1>
+						<p>
+							This graph shows the relationship between the key of a song (as determined by the Spotify API)
+							and the popularity of the song. The graph shows five hundred data points randomly selected from a pool 
+							of forty-thousand. The white line represents the line of best fit. If the line is slanted up, there is 
+							a positive correlation between the danceability of a song and popularity. If the line is slanted down, 
+							there is a negative correlation between the danceability of a song and popularity. If the line is flat, 
+							there is no correlation between the two.
+						</p>
+					</div>
+					
+					<canvas
+					id="KeyVsPopularityChart"
+					/>
 
-                <canvas
-                id="KeyVsPopularityChart"
-                />
-
-            </div>
+				</div>
+			</main>
         )
     }
 }

@@ -1,0 +1,89 @@
+Group Members:
+Nathan Williams
+Prasheeth Venkat Kumar
+Cameron Stanley
+Tim Williams
+
+Nathan:
+Data Set - Esport Subreddit Comments from Kaggle
+https://www.kaggle.com/emstatsl/esport-subreddit-comments
+
+Description: A collection of the last 10,000 comments on E-Sport subreddits. Contains the attitude of the comment and the comments themselves.
+
+Potential Customers: Esports Organizations
+
+Problem that is solved: Data can be analyzed to determine public attitude towards different Esport games. This data can be used by ESport organizations to
+                        determine what games would be most profitable  to put their focus on and to determine where they should be spending money. If a game's
+                        popularity is declining, an ESports organization will be able to see this and pull out of that games ESports scene to save resources.
+                        
+Product Vision: For ESports Organizations who want to maximize profits and popularity in the ESports industry, the ESport Popularity Analyzer is a website that keeps track of 
+                public popularity in various ESport games by analysing social media comments. AI is used to determine the attitude of the comment. From this, comments
+                are given a positive/negative rating and compiled in order to determine if the general feelings towards a game is positive or negative. Data will be
+                compiled into a clean and easy to understand UI that breaks down what games are trending. Unlike private company owned data analyzers, ESport Popularity
+                Analyzer will be available to any organization that would find it useful (even small organizations) instead of being private to one organization. It will be
+                useful because it will allow more teams to compete in games that viewers want to see. This will make the viewers happier and will provide more 
+                entertainment to them.   
+
+Major Features: - Number of mentions per game, per day is displayed
+                - Positivity rating is assigned to every game
+                - Shows history of both mentions and positivity rating
+                - A clean and easy to use UI
+                  
+Prasheeth:
+Dateset: Most played Spotify tracks in recent years from Kaggle
+
+Description: A dataset that reflects various attributes of the most popular spotify songs such as genre, danceability, energy, etc. 
+
+Customer: Music record label companies.
+
+Problem solved the proposed project: Music label companies can use the provided insight to sign new artists who have the trajectory and potential to a successful and profitable music career. 
+
+Product vision: 
+For Music record labels Who want to increase their profits and expand their audience base, 
+Deep Music Dive is a web-based product that provides insight towards upcoming trends and artists using graphs, charts, and other power visualizations of data. 
+The data will be displayed in an intuitive UI for easier understanding of large amounts of data. Unlike other data analyzer organizations,
+Deep Music Dive will provide unique data which can be accessed by multiple music record labels without being exclusive for one single company. 
+Our product will help uncover obscure trends that provide deep perception about the music industry in a simplified and easy to understand manner.
+
+How will this project be useful to society: As the Music label companies pick up new artists using the provided insight, society gets to explore new artists and enjoy more new music. 
+Music labels give unknown artists a platform to express their music to a wider audience. Therefore, creating a win-win-win situation for the music label company, artist, and the audience.
+
+Major Features: 
+- Visualization of large amounts of data
+- Provides impactful statistics
+- Intiviute UI
+
+Cameron:
+Dateset: Trending Netflix shows from Kaggle
+
+Description: A dataset that reflects various attributes of the most popular Netflix shows such as actors, genre, etc.  
+
+Customer: Viewers, TV Show Producers
+
+Problem solved the proposed project: Companies can see what trends are being followed In tv show entertainment and base their predictions off of those.  
+
+Product vision: 
+Movies and Tv Show Producers and their companies who are always looking to make the next big thing will use this web-based product to get quick informative feedback on how trends are being followed currently. 
+The data from these will be displayed in ways such as graphs and breakdown tables to show in small but informative bits the information needed on how TV shows will go.  This will be able to be used by anybody not just big companies. This means that anyone who just needs something to watch would also be able to view it as well. 
+
+How will this project be useful to society: This will help companies tailor their projects to the consumer and make better entertainment based on what the consumers want. 
+
+Major Features: 
+- Visualization of large amounts of data
+- Provides impactful statistics
+- Intuitive UI
+
+Tim:
+Dataset: Top trending videos on YouTube from Kaggle
+Description: A dataset that reflects the most popular videos on YouTube across the world, reflecting number of shares, comments, likes, etc.…
+Customer: YouTube users, Content creators, and data collectors
+Problem solved the proposed project: Companies can see what trends are being followed and manipulate ads to customers and base their predictions off of those.   
+Product vision: 
+YouTube is one of the most valuable apps when it comes to creative delivery. In recent history only large companies looking for new ways to track and market to customers have taken advantage of this information and data. 
+The data received from Kaggle will inspire breakdowns in the forms of charts and graphs to be utilized by creative people looking to make the most of their YouTube experience as well as the people who look to browse for entertainment. The user will be able to reduce the clutter in their experience with YouTube. 
+How will this project be useful to society: This idea will focus on the customer experience and user interaction and improve the overall experience for the customer.
+
+Major Features: 
+- Visualization of large amounts of data
+- Provides impactful statistics
+- Intuitive UI

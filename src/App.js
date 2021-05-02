@@ -16,6 +16,7 @@ import TempoVsPopularity from './components/TempoVsPopularity.component';
 import LoudnessVsPopularity from './components/LoudnessVsPopularity.component';
 import KeyVsPopularity from './components/KeyVsPopularity.component';
 import AcousticnessVsPopularity from './components/AcousticnessVsPopularity.component';
+import AdvancedAnalytics from './AdvancedAnalytics/AdvancedAnalytics'
 
 const App = () => {
 
@@ -30,6 +31,7 @@ const App = () => {
                 <Route path="/loudness" component={LoudnessVsPopularity}/>
                 <Route path="/key" component={KeyVsPopularity}/>
                 <Route path="/acousticness" component={AcousticnessVsPopularity}/>
+                <Route path="/advanced" component={AdvancedAnalytics}/>
                 <Route path="/">
                     <HomePage/>
                 </Route>

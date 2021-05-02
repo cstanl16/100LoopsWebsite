@@ -57,7 +57,7 @@ const MainNav = () => (
                 >
                 AcousticnessVsPop
                 </Nav.Link>
-                
+
                 <Nav.Link
                 as={RouterNavLink}
                 to="/key"
@@ -73,7 +73,7 @@ const MainNav = () => (
 
         <Nav.Link
         as={RouterNavLink}
-        to="/charts"
+        to="/advanced"
         exact
         className="Nav-Link"
         activeClassName="Nav-Link-active"

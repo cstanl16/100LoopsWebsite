@@ -7,7 +7,7 @@ function HomePage() {
             <div className="page-area">
 
                 <div className="homepageText">
-                    <h1>Welcome!</h1>
+                    <h1>TEST</h1>
                     <p>
                         Deep Music Dive is a web-based product that provides insight towards upcoming trends 
                         and artists using graphs, charts, and other power visualizations of data. Here you can 

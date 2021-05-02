@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Chart from "chart.js";
 import LoudnessVsPopularityData from '../Chart Files/LoudnessVsPopularity.csv';
 import * as d3 from "d3";
+import chartTrendline from "chartjs-plugin-trendline";
 
 export default class LoudnessVsPopularity extends Component {
     
@@ -28,28 +29,7 @@ export default class LoudnessVsPopularity extends Component {
 							width: 5
 						},
 						backgroundColor: [
-
-							'rgba(30, 215, 96, 1)',
-							'rgba(30, 215, 96, 1)',
-							'rgba(30, 215, 96, 1)',
-							'rgba(30, 215, 96, 1)',
-							'rgba(30, 215, 96, 1)',
-							'rgba(30, 215, 96, 1)',
-							'rgba(30, 215, 96, 1)',
-							'rgba(30, 215, 96, 1)',
-							'rgba(30, 215, 96, 1)',
-							'rgba(30, 215, 96, 1)',
-							'rgba(30, 215, 96, 1)',
-							'rgba(30, 215, 96, 1)',
-							'rgba(30, 215, 96, 1)',
-							'rgba(30, 215, 96, 1)',
-							'rgba(30, 215, 96, 1)',
-							'rgba(30, 215, 96, 1)',
-							'rgba(30, 215, 96, 1)',
-							'rgba(30, 215, 96, 1)',
-							'rgba(30, 215, 96, 1)',
 							'rgba(30, 215, 96, 1)'
-
 						]
 					}],
 				},

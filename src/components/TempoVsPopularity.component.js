@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Chart from "chart.js";
 import TempoVsPopularityData from '../Chart Files/TempoVsPopularity.csv';
 import * as d3 from "d3";
+import chartTrendline from "chartjs-plugin-trendline";
 
 export default class TempoVsPopularity extends Component {
     
@@ -22,35 +23,14 @@ export default class TempoVsPopularity extends Component {
 					datasets: [{ 
 						label: 'Tempo vs Popularity',
 						data: popularity,
-                        trendlineLinear: {
+						backgroundColor: [
+							'rgba(30, 215, 96, 1)'
+						],
+						trendlineLinear: {
 							style: "rgba(255 , 255, 255, 1)",
 							lineStyle: "solid",
 							width: 5
 						},
-						backgroundColor: [
-
-							'rgba(30, 215, 96, 1)',
-							'rgba(30, 215, 96, 1)',
-							'rgba(30, 215, 96, 1)',
-							'rgba(30, 215, 96, 1)',
-							'rgba(30, 215, 96, 1)',
-							'rgba(30, 215, 96, 1)',
-							'rgba(30, 215, 96, 1)',
-							'rgba(30, 215, 96, 1)',
-							'rgba(30, 215, 96, 1)',
-							'rgba(30, 215, 96, 1)',
-							'rgba(30, 215, 96, 1)',
-							'rgba(30, 215, 96, 1)',
-							'rgba(30, 215, 96, 1)',
-							'rgba(30, 215, 96, 1)',
-							'rgba(30, 215, 96, 1)',
-							'rgba(30, 215, 96, 1)',
-							'rgba(30, 215, 96, 1)',
-							'rgba(30, 215, 96, 1)',
-							'rgba(30, 215, 96, 1)',
-							'rgba(30, 215, 96, 1)'
-
-						]
 					}],
 				},
 				options: {

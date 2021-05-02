@@ -3,46 +3,28 @@ import React from 'react';
 function HomePage() {
   return (
     <div>
-         <main className="center" id="main">
-
+        <main className="center" id="main">]
             <div className="page-area">
 
                 <div className="text-box">
                     <h1 fontSize="300">Welcome!</h1>
                     <p>
-                    Deep Music Dive is a web-based product that provides insight towards upcoming trends 
-and artists using graphs, charts, and other power visualizations of data. Here you can 
-view trends in the music industry and use that information to pick out the next big artist.
+                        Deep Music Dive is a web-based product that provides insight towards upcoming trends 
+                        and artists using graphs, charts, and other power visualizations of data. Here you can 
+                        view trends in the music industry and use that information to pick out the next big artist.
                     </p>
                 </div>
 
                 <div className="text-box">
                     <h1>How to Use</h1>
                     <p>
-                    Click on the Tabs above to get started. Visual Analysis will show you charts and graphs
-comparing the popularity of an artist to attributes of their songs, such as danceability,
-loudness, etc. Attribute Analysis will show you AI generated attributes that are associated
-with the most popular artists.
-                    </p>
-                </div>
-                <div className="text-box">
-                    <h1 fontSize="300">Welcome!</h1>
-                    <p>
-                    Deep Music Dive is a web-based product that provides insight towards upcoming trends 
-and artists using graphs, charts, and other power visualizations of data. Here you can 
-view trends in the music industry and use that information to pick out the next big artist.
+                        Click on the Tabs above to get started. Visual Analysis will show you charts and graphs
+                        comparing the popularity of an artist to attributes of their songs, such as danceability,
+                        loudness, etc. Attribute Analysis will show you AI generated attributes that are associated
+                        with the most popular artists.
                     </p>
                 </div>
 
-                <div className="text-box">
-                    <h1>How to Use</h1>
-                    <p>
-                    Click on the Tabs above to get started. Visual Analysis will show you charts and graphs
-comparing the popularity of an artist to attributes of their songs, such as danceability,
-loudness, etc. Attribute Analysis will show you AI generated attributes that are associated
-with the most popular artists.
-                    </p>
-                </div>
             </div>
         </main>
     </div>
